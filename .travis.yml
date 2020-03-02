@@ -13,3 +13,11 @@ install:
 script: 
   - g++ helloworld.cpp -std=c++17 -o helloworld
   - ./helloworld
+
+  deploy:
+  provider: bintray
+  file: "descriptor.json"
+  user: "andrewsmetanin"
+  key: "BINTRAY_API_KEY"
+  #passphrase: "Optional. In case a passphrase is configured on Bintray and GPG signing is used"
+  #skip_cleanup: true # to upload artifacts created during the build

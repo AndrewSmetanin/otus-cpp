@@ -4,3 +4,9 @@ language: cpp
 compiler: gcc
 
 os: linux
+
+deploy:
+  provider: bintray
+  file: "descriptor.json"
+  user: "Bintray user"
+  key: "Bintray API key"

@@ -1,12 +1,15 @@
-#travis configuration for coverage testing
 language: cpp
-# Compiler selection
 compiler: gcc
+dist: trusty
 
-os: linux
+before_install:
+  - sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test
+  - sudo apt-get update -qq
 
-deploy:
-  provider: bintray
-  file: "descriptor.json"
-  user: "Bintray user"
-  key: "Bintray API key"
+install: 
+  - sudo apt-get install -qq g++-6
+  - sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-6 90
+
+script: 
+  - g++ helloworld.cpp -std=c++17 -o helloworld
+  - ./helloworld

@@ -1,3 +1,2 @@
 # otus-cpp
-1
-2
+otus git travis bintray hello world

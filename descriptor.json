@@ -11,17 +11,8 @@
     },
 
     "version": {
-        "name": "0.1"       
+        "name": "0.1.1"       
     },
 
-    "files":
-        [
-            {"includePattern": "build/bin/(.*\.deb)", "uploadPattern": "pool/main/m/mypackage/$1",
-                "matrixParams": {
-                    "deb_distribution": "xenial",
-                    "deb_component": "main",
-                    "deb_architecture": "amd64"}
-            }
-        ],
     "publish": true
 }

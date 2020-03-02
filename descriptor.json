@@ -1,0 +1,27 @@
+{
+    "package": {
+        "name": "homework",
+        "repo": "otus-cpp",
+        "subject": "andrewsmetanin",
+        "desc": "I was pushed completely automatically",
+        "website_url": "www.jfrog.com",
+        "issue_tracker_url": "https://github.com/AndrewSmetanin/otus-cpp/issues",
+        "vcs_url": "https://github.com/AndrewSmetanin/otus-cpp.git",
+        "licenses": ["Apache-2.0"]
+    },
+
+    "version": {
+        "name": "0.1"       
+    },
+
+    "files":
+        [
+            {"includePattern": "build/bin/(.*\.deb)", "uploadPattern": "pool/main/m/mypackage/$1",
+                "matrixParams": {
+                    "deb_distribution": "xenial",
+                    "deb_component": "main",
+                    "deb_architecture": "amd64"}
+            }
+        ],
+    "publish": true
+}

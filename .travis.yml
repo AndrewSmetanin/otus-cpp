@@ -14,7 +14,7 @@ script:
   - g++ helloworld.cpp -std=c++17 -o helloworld
   - ./helloworld
 
-  deploy:
+deploy:
   provider: bintray
   file: "descriptor.json"
   user: "andrewsmetanin"

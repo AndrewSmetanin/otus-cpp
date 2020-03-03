@@ -1,0 +1,12 @@
+/home/user/test/01.cmake-test/CMakeFiles/install/strip.dir
+/home/user/test/01.cmake-test/CMakeFiles/install.dir
+/home/user/test/01.cmake-test/CMakeFiles/list_install_components.dir
+/home/user/test/01.cmake-test/CMakeFiles/edit_cache.dir
+/home/user/test/01.cmake-test/CMakeFiles/rebuild_cache.dir
+/home/user/test/01.cmake-test/CMakeFiles/helloworld.dir
+/home/user/test/01.cmake-test/CMakeFiles/helloworld_cli.dir
+/home/user/test/01.cmake-test/CMakeFiles/package.dir
+/home/user/test/01.cmake-test/CMakeFiles/package_source.dir
+/home/user/test/01.cmake-test/CMakeFiles/test_version.dir
+/home/user/test/01.cmake-test/CMakeFiles/install/local.dir
+/home/user/test/01.cmake-test/CMakeFiles/test.dir

@@ -6,6 +6,10 @@ addons:
   apt:
     packages:
     - libboost-test-dev
+<<<<<<< HEAD
+=======
+    - libspdlog-devs
+>>>>>>> 4d7be57a5fc8499ed10b561e442e9780dfe0591b
 script:
 - cmake .
 - cmake --build .
@@ -15,4 +19,8 @@ deploy:
   provider: script
   skip_cleanup: true
   script:
+<<<<<<< HEAD
   - curl -f -T helloworld-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb -uandrewsmetanin:$BINTRAY_API_KEY "https://api.bintray.com/content/andrewsmetanin/otus-cpp/homework/0.0.$TRAVIS_BUILD_NUMBER/helloworld-0.0.$TRAVIS_BUILD_NUMBER.deb;deb_distribution=xenial;deb_component=main;deb_architecture=amd64;publish=1"
+=======
+  - curl -f -T helloworld-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb -uandrewsmetanin:$BINTRAY_API_KEY "https://api.bintray.com/content/andrewsmetanin/otus-cpp/homework/0.0.$TRAVIS_BUILD_NUMBER/helloworld-0.1.0.deb;deb_distribution=xenial;deb_component=main;deb_architecture=amd64;publish=1"
+>>>>>>> 4d7be57a5fc8499ed10b561e442e9780dfe0591b
